@@ -1,0 +1,42 @@
+## Problem Description
+
+There are 'N' people standing in a circle, numbered in order from 1 to 'N'. Starting from person number 1, every 'k'th person (where 'k' is 1, 2, 3, 4, ...) leaves the circle. Write a function:
+
+```python3
+def solution(number: int) -> int:
+    pass
+```
+to output the number of the last person to leave the circle.
+
+For example, if there are 11 people numbered from 1 to 11, the person number 2 leaves first (as we skip 1 person), then person number 5 leaves next (as we skip 2 people), then person number 9 leaves (as we skip 3 people), and so on. In this case, the last person to leave is number 7.
+
+The order of leaving is:
+
+```
+2 5 9 4 1 3 8 10 11 6 7
+```
+
+### Input
+
+The input is a number 'N', which represents the number of people.
+
+### Output
+
+The output is a number representing the number of the last person to leave.
+
+### Input Example
+
+```
+number = 11
+```
+
+
+### Output Example
+
+```
+7
+```
+
+### Note
+
+The problem is to determine the order of people leaving the circle based on the count of skipped people, and to find the number of the last person to leave. The count of skipped people increases by 1 each time.
