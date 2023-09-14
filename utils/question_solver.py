@@ -11,7 +11,7 @@ QUESTION_SOLVER_PROMPT_PATH = r"./prompt/question_solver_prompt.txt"
 
 class QuestionSolver:
     def __init__(self) -> None:
-        self.chatbot = get_azure_chatbot(request_timeout=20)
+        self.chatbot = get_azure_chatbot(request_timeout=60)
         with open(QUESTION_SOLVER_PROMPT_PATH, "r") as file:
             question_solver_prompt = file.read()
         self.prompt_template = question_solver_prompt
