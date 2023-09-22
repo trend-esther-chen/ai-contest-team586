@@ -1,0 +1,33 @@
+### Description
+Two friends, Emma and Liam, are traveling together. They have decided to split the bill based on the items they individually consumed. Emma receives the bill and takes the responsibility of calculating Liam's portion. Your task is to determine whether Emma's calculation is accurate. 
+Return how much Emma needed to refund to Liam.
+You are given the following parameters for the problem:
+
+- `N`: An integer representing the total number of items they consumed.
+- `i`: An integer representing the index of the item that Liam did not need to pay for.
+- `cost`: An array of integers representing the cost of each item ordered.
+- `M`: An integer representing the amount of money Emma charged Liam for her portion of the bill.
+
+You need to implement the following function:
+
+```python3
+def solution(N: int, i: int, cost: list[int], M:int) -> int:
+    ...
+```
+
+### Constraints
+- 0 < N <= 500
+- cost.length = N
+- 0 < M
+
+### Example 1
+```
+Input: N = 5, i = 1, cost = [3,10,2,9,4], M = 9
+Output: 0
+```
+
+### Example 2
+```
+Input: N = 5, i = 1, cost = [3,10,2,9,4], M = 14
+Output: 5
+```

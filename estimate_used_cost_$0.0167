@@ -4,3 +4,6 @@ Only calculates costs executed locally, may not be accurate!
 2023-09-06 16:58:15.498682 prompt token: 383 completion token: 178 cost: $0.0019
 2023-09-07 16:05:48.038462 prompt token: 383 completion token: 150 cost: $0.0017
 2023-09-07 16:39:52.814549 prompt token: 383 completion token: 174 cost: $0.0018
+2023-09-21 12:01:00.564453 prompt token: 575 completion token: 239 cost: $0.0027
+2023-09-21 15:46:02.452297 prompt token: 674 completion token: 323 cost: $0.0033
+2023-09-21 15:50:31.436257 prompt token: 667 completion token: 373 cost: $0.0035

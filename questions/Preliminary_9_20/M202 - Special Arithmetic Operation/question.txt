@@ -1,0 +1,44 @@
+### Problem Description
+
+Given a string `f`, which is a mathematical formula that includes the operators `+`, `-`, and `*`, along with a string `p` which should be calculated first(one of the operators). After computing the priority operator, the rest of the formula should follow the PEMDAS (Parentheses, Exponents, Multiplication and Division, Addition and Subtraction) rule. We need to create a Python function that can compute and output the result of this formula:
+
+```python3
+def solution(f:str, p:str) -> int:
+    pass
+```
+
+### **Constraints:**  
+* $1 <= f.length <= 10^5$
+
+### **Input Example 1**  
+
+
+```python3
+f = "1+2*3", p = "+"
+```
+
+### Output Example 1
+
+```python3
+9
+```
+
+### Explanation 1
+
+The priority operator is “+”, so all “+” must be computed first, hence the formula equals to (1+2)*3 equals to 9
+
+### **Input Example 2**  
+
+```python3
+f = "1*2-3+4-5*6", p = "-"
+```
+
+### Output Example 2
+
+```python3
+-7
+```
+
+### Explanation 2
+
+The priority operator is “-”, so all “-” must be computed first, hence the formula equals to 1*(2-3)+(4-5)*6 equals to -7

@@ -1,0 +1,60 @@
+### Problem Description
+
+Given three integers `x`, `y` and `bound`, find a list of all the powerful integers that have a value less than or equal to `bound`.
+An integer is powerful if it can be represented as $x^i + y^j$.
+You may return the sum of all the powerful integers as a magic number. 
+
+Write a function:
+
+```python3
+def solution(x: int, y: int, bound: int) -> int:
+    pass
+```
+
+### Input
+
+"x" is integer for calculate powerful integer
+
+"y" is integer for calculate powerful integer
+
+"bound" is powerful integers that have a value less than or equal to
+
+### Output
+
+The sum of all the powerful integers
+
+### Input Example
+
+```
+x = 2, y = 3, bound = 10
+```
+
+### Output Example
+
+```
+40
+```
+
+### Explanation
+
+$2 = 2^0 + 3^0$
+
+$3 = 2^1 + 3^0$
+
+$4 = 2^0 + 3^1$
+
+$5 = 2^1 + 3^1$
+
+$7 = 2^2 + 3^1$
+
+$9 = 2^3 + 3^0$
+
+$10 = 2^0 + 3^2$
+
+$2 + 3 + 4 + 5 + 7 + 9 + 10 = 40$
+
+### Constraints
+
+- $1 <= x, y <= 100$
+- $0 <= bound <= 10^6$
+- $0<=i, j$

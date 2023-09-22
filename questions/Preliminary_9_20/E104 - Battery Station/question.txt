@@ -1,0 +1,46 @@
+### Problem Description
+
+There are n charging stations situated along a circular route for electric cars. The amount of battery charge available at the `i-th` station is represented as battery[i].
+
+You possess an electric car with an unlimited battery capacity. However, it costs cost[i] of battery charge to travel from the `i-th` station to its next `(i + 1)-th` station. You commence the journey with an empty battery at one of the charging stations.
+
+Given two integer arrays `battery` and `cost`, your task is to return the index of the starting charging station if you can complete a full circuit in the clockwise direction. If it's not possible to do so, return -1. If there exists a solution, it is guaranteed to be unique.
+
+You need to implement function as follows:
+
+```python3
+def solution(battery: list[int], cost: list[int]) -> int:
+    # battery: a sequence of the number of batteries at each station.
+    # cost: a sequence of the cost of each battery.
+    pass
+```
+
+### Input Example
+
+```
+battery = [2, 3, 4], cost = [3, 4, 3]
+```
+
+### Output Example
+
+```
+-1
+```
+
+### Explanation
+
+You can't start at station index 0 or 1, as there is not enough battery to reach the next station.
+Let's start at station 2 and fill up with 4 batteries. Your power is 0 + 4 = 4
+
+Reach to station 0. power is 4 - 3 + 2 = 3
+
+Reach to station 1. power is 3 - 3 + 3 = 3
+
+You cannot go back to station 2, as it requires 4 batteries, but you only have 3.
+Therefore, you can't travel around the circuit once no matter where you start.
+
+### Constraints
+
+- n == s.length == cost.length
+- 1 <= n <= 100000
+- 0 <= s[i], cost[i] <= 10000

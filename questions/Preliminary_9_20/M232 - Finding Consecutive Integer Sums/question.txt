@@ -1,0 +1,35 @@
+ 
+### Problem Descroption
+
+Emma, a mathematics enthusiast, is exploring the fascinating world of consecutive integer sums. She aims to develop a program that, given an integer `num`, can identify three consecutive integers whose sum is equal to `num`. She seeks your aid in achieving this goal.
+
+Your task is to implement a function that accepts an integer `num` as an input and returns a sorted array (in ascending order) of three consecutive integers whose sum equals `num`. If no such set of three consecutive integers exists, the function should return an empty array.
+
+You need to implemment the following function:  
+
+```python3
+def solution(num: int) -> list[int]:
+    ...
+    pass
+```
+
+### Constraints
+
+- $0 <= num <= 10^{15}$
+
+### Example 1
+
+```
+Input: num = 33
+Output: [10, 11, 12]
+Explanation: 33 can be expressed as 10 + 11 + 12 = 33.
+10, 11, and 12 are three consecutive integers, so we return [10, 11, 12].
+```
+
+### Example 2
+
+```
+Input: num = 4
+Output: []
+Explanation: There is no way to express 4 as the sum of three consecutive integers.
+```

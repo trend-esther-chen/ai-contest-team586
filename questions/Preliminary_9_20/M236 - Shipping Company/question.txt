@@ -1,0 +1,31 @@
+### Description
+
+The shipping company has multiple packages with different weights that need to be transported from Location A to Location B. You are given an integer array `w` which represents the weight of each package. However, there's a weight limit for each trip, given as `n`. Return the minimum number of trips required to transport all the packages.
+
+Write a function according to the following example:
+```python3
+def solution(n: int, w: list[int]) -> int:
+    pass
+```
+
+### Constraints
+- $1 ≤ n ≤ 10^9$
+- $1 ≤ w.Length ≤ 20$
+- $1 ≤ w[i] ≤ n$
+
+### Example Input
+
+```
+n = 10, w = [4, 7, 6, 2] 
+```
+ 
+### Example Output
+```
+2
+```
+
+### Explanation
+```
+It needs 2 trips at least.  
+[4, 6], [7, 2]
+```

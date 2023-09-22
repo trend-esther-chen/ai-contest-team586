@@ -1,0 +1,35 @@
+### Description
+
+The gentleman thief, Lupin, is contemplating on cracking a safe. He is given two numeric strings, `num1` and `num2`, along with two integers, `max_sum` and `min_sum`. His task is to determine how many numbers adhere to the safe's password rules which are as follows:
+
+- num1 <= x <= num2
+- min_sum <= digit_count(x) <= max_sum
+
+Please note that digit_count(x) represents the sum of the digits of x. The function should return the number of valid integers. Given that the answer may be large, it should be returned modulo $10^9+7$.
+
+You need to implement the following function:
+
+```python3
+def solution(num1: str, num2: str, min_sum: int, max_num:int) -> int:
+    pass
+```
+
+### Constraints:
+- $1 <= num1 <= num2 <= 10^{22}$
+- 1 <= min_sum <= max_sum <= 400
+
+### Input Example
+
+```
+num1 = '1', num2 = '12', min_sum = 1, max_sum = 8
+```
+
+### Output Example
+
+```
+11
+```
+
+### Explanation
+
+There are 11 integers whose sum of digits lies between 1 and 8 are 1,2,3,4,5,6,7,8,10,11, and 12. Thus, we return 11.

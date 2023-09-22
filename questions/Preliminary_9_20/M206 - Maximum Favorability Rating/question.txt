@@ -1,0 +1,30 @@
+### Description
+During a social gathering, the organizers have arranged an n*n seating arrangement, and each participant at a seat has an initial rating of favorability. The organizers have set a rule that in each round, they can only choose two adjacent participants to interact, where adjacency is defined as being in front of, behind, to the left, or to the right of each other. After the interaction, the favorability of these two participants will be multiplied by `-1`. There is no limit to the number of rounds, and the gathering will end when the total favorability of the entire gathering is maximized. Our goal is to assist the organizers in continuously selecting two participants at a time to interact and find the highest possible total favorability for the entire gathering.
+
+You need to implement the following function:
+```python3
+def solution(favorability: list[list[int]]) -> int:
+    pass
+```
+
+### Constraints
+- n == favorability.length == favorability[i].length
+- 2 <= n <= 250
+- $-10^5 <= favorability[i][j] <= 10^5$
+
+### Example 1
+```
+Input: matrix = [[1,-1],[-1,1]]
+Output: 4
+Explanation: We can follow the following steps to reach sum equals 4:
+- Multiply the 2 elements in the first row by -1.
+- Multiply the 2 elements in the first column by -1.
+```
+
+### Example 2
+```
+Input: matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]
+Output: 16
+Explanation: We can follow the following step to reach sum equals 16:
+- Multiply the 2 last elements in the second row by -1.
+```
