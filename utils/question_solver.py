@@ -1,5 +1,5 @@
 import json
-
+import concurrent.futures
 from langchain.prompts import PromptTemplate
 from langchain.schema import HumanMessage
 
@@ -40,7 +40,10 @@ class QuestionSolver:
         logger.debug("Input prompt\n" + input.to_string())
 
         messages = [HumanMessage(content=input.to_string())]
-        response = self.chatbot(messages).content
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+            future = executor.submit(self.chatbot, messages)
+            response = future.result().content
+        # response = self.chatbot(messages).content
         logger.debug("ChatGPT response:\n" + str(response))
 
         try:
